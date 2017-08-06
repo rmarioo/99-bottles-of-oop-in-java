@@ -4,13 +4,6 @@ public class Bottles
 {
   public String verse(int number)
   {
-    if (number == 0)
-      return
-       capitalize(quantity(number)) +" " + container(number) +" of beer on the wall, " +
-       quantity(number) +" " + container(number) +" of beer.\n" +
-       action(number) + ", " +
-       quantity(next(number)) +" " + container(next(number)) + " of beer on the wall.\n";
-    else
     return
        capitalize(quantity(number)) +" " + container(number) +" of beer on the wall, " +
        quantity(number) +" " + container(number) +" of beer.\n" +
