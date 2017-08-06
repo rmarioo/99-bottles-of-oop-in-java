@@ -32,10 +32,7 @@ public class Bottles
 
   private String quantity(int number)
   {
-    if (number ==0)
-      return "no more";
-    else
-      return String.valueOf(number);
+    return new BottleNumber().quantity(number);
   }
 
   public String container(int number)

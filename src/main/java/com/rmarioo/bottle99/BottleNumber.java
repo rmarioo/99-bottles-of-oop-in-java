@@ -26,5 +26,11 @@ public class BottleNumber
       return "one";
   }
 
-
+  String quantity(int number)
+  {
+    if (number ==0)
+      return "no more";
+    else
+      return String.valueOf(number);
+  }
 }
