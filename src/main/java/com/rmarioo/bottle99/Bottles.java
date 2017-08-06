@@ -13,21 +13,24 @@ public class Bottles
     else
     if (number ==1)
       return
-        number +" bottle of beer on the wall, " +
-        number +" bottle of beer.\n" +
+        quantity(number) +" bottle of beer on the wall, " +
+        quantity(number) +" bottle of beer.\n" +
         "Take "+ pronoun(number)+" down and pass it around, " +
         quantity(number-1) + " bottles of beer on the wall.\n";
     else
     return
-        number +" bottles of beer on the wall, " +
-        number +" bottles of beer.\n" +
+        quantity(number) +" bottles of beer on the wall, " +
+        quantity(number) +" bottles of beer.\n" +
         "Take "+ pronoun(number)+" down and pass it around, " +
         (number-1) +" " + container(number-1) + " of beer on the wall.\n";
   }
 
   private String quantity(int number)
   {
-    return "no more";
+    if (number ==0)
+      return "no more";
+    else
+      return String.valueOf(number);
   }
 
   public String container(int number)
