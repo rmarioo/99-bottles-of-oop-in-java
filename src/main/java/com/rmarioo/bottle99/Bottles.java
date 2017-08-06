@@ -35,10 +35,10 @@ public class Bottles
 
   public String container(int number)
   {
-    if (number > 1)
-      return "bottles";
-    else
+    if (number == 1)
       return "bottle";
+    else
+      return "bottles";
   }
 
   private String pronoun(int number)
