@@ -31,4 +31,9 @@ public class Bottles
         "Take one down and pass it around, " +
         (number-1) +" bottles of beer on the wall.\n";
   }
+
+  public String container()
+  {
+    return "";
+  }
 }
