@@ -11,11 +11,6 @@ public class Bottles
                                  .collect(Collectors.joining(""));
   }
 
-  private IntStream reverseIntRange(int from, int to)
-  {
-    return IntStream.range(from + 1, to + 1).map(i -> to - i + from +  1 );
-  }
-
   public String verse(int number)
   {
     return
@@ -69,4 +64,10 @@ public class Bottles
     else
       return "one";
   }
+
+  private IntStream reverseIntRange(int from, int to)
+  {
+    return IntStream.range(from + 1, to + 1).map(i -> to - i + from +  1 );
+  }
+
 }
