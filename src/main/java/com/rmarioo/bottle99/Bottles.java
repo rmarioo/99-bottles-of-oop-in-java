@@ -20,7 +20,10 @@ public class Bottles
 
   private String action(int number)
   {
-    return "Go to the store and buy some more";
+    if  (number == 0)
+      return "Go to the store and buy some more";
+    else
+      return "Take "+ pronoun(number)+" down and pass it around";
   }
 
   private String capitalize(String quantity)
