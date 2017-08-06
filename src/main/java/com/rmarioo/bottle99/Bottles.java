@@ -8,7 +8,7 @@ public class Bottles
       return
        capitalize(quantity(number)) +" " + container(number) +" of beer on the wall, " +
        quantity(number) +" " + container(number) +" of beer.\n" +
-       "Go to the store and buy some more, " +
+       action() + ", " +
        "99 bottles of beer on the wall.\n";
     else
     return
@@ -18,11 +18,15 @@ public class Bottles
         quantity(number-1) +" " + container(number-1) + " of beer on the wall.\n";
   }
 
+  private String action()
+  {
+    return "Go to the store and buy some more";
+  }
+
   private String capitalize(String quantity)
   {
     return Character.toUpperCase(quantity.charAt(0))+ quantity.substring(1);
   }
-
 
   private String quantity(int number)
   {
