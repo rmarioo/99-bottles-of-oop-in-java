@@ -9,7 +9,7 @@ public class Bottles
        capitalize(quantity(number)) +" " + container(number) +" of beer on the wall, " +
        quantity(number) +" " + container(number) +" of beer.\n" +
        action(number) + ", " +
-       "99 " + container(number-1) + " of beer on the wall.\n";
+       quantity(99) +" " + container(number-1) + " of beer on the wall.\n";
     else
     return
        capitalize(quantity(number)) +" " + container(number) +" of beer on the wall, " +
