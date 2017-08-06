@@ -16,7 +16,7 @@ public class Bottles
         number +" bottle of beer on the wall, " +
         number +" bottle of beer.\n" +
         "Take "+ pronoun(number)+" down and pass it around, " +
-        quantity() + " bottles of beer on the wall.\n";
+        quantity(number-1) + " bottles of beer on the wall.\n";
     else
     return
         number +" bottles of beer on the wall, " +
@@ -25,7 +25,7 @@ public class Bottles
         (number-1) +" " + container(number-1) + " of beer on the wall.\n";
   }
 
-  private String quantity()
+  private String quantity(int number)
   {
     return "no more";
   }
