@@ -16,12 +16,12 @@ public class Bottles
         number +" bottles of beer on the wall, " +
         number +" bottles of beer.\n" +
         "Take one down and pass it around, " +
-        "2 bottles of beer on the wall.\n";
+        (number-1) +" bottles of beer on the wall.\n";
     else
     return
         number +" bottles of beer on the wall, " +
         number +" bottles of beer.\n" +
         "Take one down and pass it around, " +
-        "98 bottles of beer on the wall.\n";
+        (number-1) +" bottles of beer on the wall.\n";
   }
 }
