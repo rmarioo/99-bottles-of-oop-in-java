@@ -21,4 +21,16 @@ public class BottleTest
         "98 bottles of beer on the wall.\n"));
   }
 
+  @Test
+  public void anotherVerse() throws Exception
+  {
+    String result = bottles.verse(3);
+    assertThat(result,is(
+        "3 bottles of beer on the wall, " +
+        "3 bottles of beer.\n" +
+        "Take one down and pass it around, " +
+        "2 bottles of beer on the wall.\n"));
+  }
+
+
 }
