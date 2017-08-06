@@ -18,6 +18,12 @@ public class Bottles
         quantity(number-1) +" " + container(number-1) + " of beer on the wall.\n";
   }
 
+  private String capitalize(String quantity)
+  {
+    return Character.toUpperCase(quantity.charAt(0))+ quantity.substring(1);
+  }
+
+
   private String quantity(int number)
   {
     if (number ==0)
