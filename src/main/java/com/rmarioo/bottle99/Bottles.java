@@ -13,31 +13,17 @@ public class Bottles
 
   public String verse(int number)
   {
+    BottleNumber bottleNumber = new BottleNumber(number);
     return
-       capitalize(quantity(number)) +" " + container(number) +" of beer on the wall, " +
-       quantity(number) +" " + container(number) +" of beer.\n" +
-       action(number) + ", " +
-       quantity(next(number)) +" " + container(next(number)) + " of beer on the wall.\n";
+       capitalize(bottleNumber.quantity()) +" " + bottleNumber.container() +" of beer on the wall, " +
+       bottleNumber.quantity() +" " + bottleNumber.container() +" of beer.\n" +
+       bottleNumber.action() + ", " +
+       new BottleNumber(next(number)).quantity() +" " + new BottleNumber(next(number)).container() + " of beer on the wall.\n";
   }
 
   private int next(int number)
   {
     return new BottleNumber(number).next(number);
-  }
-
-  private String action(int number)
-  {
-    return new BottleNumber(number).action();
-  }
-
-  private String quantity(int number)
-  {
-    return new BottleNumber(number).quantity();
-  }
-
-  public String container(int number)
-  {
-    return new BottleNumber(number).container();
   }
 
   private String capitalize(String quantity)
