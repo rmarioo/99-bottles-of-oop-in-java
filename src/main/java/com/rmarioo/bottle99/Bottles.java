@@ -9,13 +9,13 @@ public class Bottles
        capitalize(quantity(number)) +" " + container(number) +" of beer on the wall, " +
        quantity(number) +" " + container(number) +" of beer.\n" +
        action(number) + ", " +
-       quantity(next(number)) +" " + container(number-1) + " of beer on the wall.\n";
+       quantity(next(number)) +" " + container(next(number)) + " of beer on the wall.\n";
     else
     return
        capitalize(quantity(number)) +" " + container(number) +" of beer on the wall, " +
        quantity(number) +" " + container(number) +" of beer.\n" +
        action(number) + ", " +
-       quantity(number-1) +" " + container(number-1) + " of beer on the wall.\n";
+       quantity(next(number)) +" " + container(next(number)) + " of beer on the wall.\n";
   }
 
   private int next(int number)
