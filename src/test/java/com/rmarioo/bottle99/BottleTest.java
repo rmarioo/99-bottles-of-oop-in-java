@@ -1,3 +1,5 @@
+package com.rmarioo.bottle99;
+
 import org.junit.Test;
 
 public class BottleTest
