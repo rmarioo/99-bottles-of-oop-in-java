@@ -34,6 +34,9 @@ public class Bottles
 
   public String container(int number)
   {
-    return "bottles";
+    if (number > 1)
+      return "bottles";
+    else
+      return "bottle";
   }
 }
