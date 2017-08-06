@@ -1,7 +1,21 @@
 package com.rmarioo.bottle99;
 
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
 public class Bottles
 {
+  public String song()
+  {
+    return reverseIntRange(0,99).mapToObj(this::verse)
+                                 .collect(Collectors.joining(""));
+  }
+
+  private IntStream reverseIntRange(int from, int to)
+  {
+    return IntStream.range(from + 1, to + 1).map(i -> to - i + from +  1 );
+  }
+
   public String verse(int number)
   {
     return
