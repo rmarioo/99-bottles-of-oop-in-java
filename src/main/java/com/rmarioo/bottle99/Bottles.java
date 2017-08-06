@@ -13,13 +13,13 @@ public class Bottles
     else
     if (number ==1)
       return
-        quantity(number) +" bottle of beer on the wall, " +
+        quantity(number) +" " + container(number) +" of beer on the wall, " +
         quantity(number) +" bottle of beer.\n" +
         "Take "+ pronoun(number)+" down and pass it around, " +
-        quantity(number-1) + " bottles of beer on the wall.\n";
+        quantity(number-1) +" " + container(number-1) + " of beer on the wall.\n";
     else
     return
-        quantity(number) +" bottles of beer on the wall, " +
+        quantity(number) +" " + container(number) +" of beer on the wall, " +
         quantity(number) +" bottles of beer.\n" +
         "Take "+ pronoun(number)+" down and pass it around, " +
         quantity(number-1) +" " + container(number-1) + " of beer on the wall.\n";
