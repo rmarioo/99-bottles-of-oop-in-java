@@ -22,23 +22,12 @@ public class Bottles
 
   private int next(int number)
   {
-    if (number == 0)
-      return 99;
-    else
-      return number -1;
+    return new BottleNumber().next(number);
   }
 
   private String action(int number)
   {
-    if  (number == 0)
-      return "Go to the store and buy some more";
-    else
-      return "Take "+ pronoun(number)+" down and pass it around";
-  }
-
-  private String capitalize(String quantity)
-  {
-    return Character.toUpperCase(quantity.charAt(0))+ quantity.substring(1);
+    return new BottleNumber().action(number);
   }
 
   private String quantity(int number)
@@ -57,13 +46,11 @@ public class Bottles
       return "bottles";
   }
 
-  private String pronoun(int number)
+  private String capitalize(String quantity)
   {
-    if (number == 1)
-      return "it";
-    else
-      return "one";
+    return Character.toUpperCase(quantity.charAt(0))+ quantity.substring(1);
   }
+
 
   private IntStream reverseIntRange(int from, int to)
   {
