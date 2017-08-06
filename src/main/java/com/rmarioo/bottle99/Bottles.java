@@ -37,10 +37,7 @@ public class Bottles
 
   public String container(int number)
   {
-    if (number == 1)
-      return "bottle";
-    else
-      return "bottles";
+    return new BottleNumber().container(number);
   }
 
   private String capitalize(String quantity)
