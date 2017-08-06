@@ -15,7 +15,7 @@ public class Bottles
       return
         number +" bottle of beer on the wall, " +
         number +" bottle of beer.\n" +
-        "Take "+ pronoun()+" down and pass it around, " +
+        "Take "+ pronoun(number)+" down and pass it around, " +
         "no more bottles of beer on the wall.\n";
     else
     return
@@ -33,7 +33,7 @@ public class Bottles
       return "bottle";
   }
 
-  private String pronoun()
+  private String pronoun(int number)
   {
     return "it";
   }
