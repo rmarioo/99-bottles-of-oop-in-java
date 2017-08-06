@@ -12,10 +12,10 @@ public class Bottles
        "99 bottles of beer on the wall.\n";
     else
     return
-        capitalize(quantity(number)) +" " + container(number) +" of beer on the wall, " +
-        quantity(number) +" " + container(number) +" of beer.\n" +
-        action(number) + ", " +
-        quantity(number-1) +" " + container(number-1) + " of beer on the wall.\n";
+       capitalize(quantity(number)) +" " + container(number) +" of beer on the wall, " +
+       quantity(number) +" " + container(number) +" of beer.\n" +
+       action(number) + ", " +
+       quantity(number-1) +" " + container(number-1) + " of beer on the wall.\n";
   }
 
   private String action(int number)
