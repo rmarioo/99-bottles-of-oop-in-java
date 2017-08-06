@@ -32,4 +32,9 @@ public class Bottles
     else
       return "bottle";
   }
+
+  private String pronoun()
+  {
+    return "";
+  }
 }
