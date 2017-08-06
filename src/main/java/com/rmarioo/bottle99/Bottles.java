@@ -27,17 +27,17 @@ public class Bottles
 
   private String action(int number)
   {
-    return new BottleNumber(number).action(number);
+    return new BottleNumber(number).action();
   }
 
   private String quantity(int number)
   {
-    return new BottleNumber(number).quantity(number);
+    return new BottleNumber(number).quantity();
   }
 
   public String container(int number)
   {
-    return new BottleNumber(number).container(number);
+    return new BottleNumber(number).container();
   }
 
   private String capitalize(String quantity)

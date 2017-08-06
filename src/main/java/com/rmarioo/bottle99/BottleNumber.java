@@ -17,33 +17,33 @@ public class BottleNumber
       return number -1;
   }
 
-  String action(int number)
+  String action()
   {
-    if  (number == 0)
+    if  (this.number == 0)
       return "Go to the store and buy some more";
     else
-      return "Take "+ pronoun(number)+" down and pass it around";
+      return "Take "+ pronoun()+" down and pass it around";
   }
 
-  private String pronoun(int number)
+  private String pronoun()
   {
-    if (number == 1)
+    if (this.number == 1)
       return "it";
     else
       return "one";
   }
 
-  String quantity(int number)
+  String quantity()
   {
-    if (number ==0)
+    if (this.number ==0)
       return "no more";
     else
-      return String.valueOf(number);
+      return String.valueOf(this.number);
   }
 
-  String container(int number)
+  String container()
   {
-    if (number == 1)
+    if (this.number == 1)
       return "bottle";
     else
       return "bottles";
