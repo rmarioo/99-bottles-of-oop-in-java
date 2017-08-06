@@ -6,7 +6,7 @@ public class Bottles
   {
     if (number == 0)
       return
-       "No more " + container(number) +" of beer on the wall, " +
+       capitalize(quantity(number)) +" " + container(number) +" of beer on the wall, " +
        quantity(number) +" " + container(number) +" of beer.\n" +
        "Go to the store and buy some more, " +
        "99 bottles of beer on the wall.\n";
