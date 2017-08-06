@@ -12,7 +12,7 @@ public class Bottles
        "99 bottles of beer on the wall.\n";
     else
     return
-        quantity(number) +" " + container(number) +" of beer on the wall, " +
+        capitalize(quantity(number)) +" " + container(number) +" of beer on the wall, " +
         quantity(number) +" " + container(number) +" of beer.\n" +
         "Take "+ pronoun(number)+" down and pass it around, " +
         quantity(number-1) +" " + container(number-1) + " of beer on the wall.\n";
