@@ -32,11 +32,6 @@ public class Bottles
         (number-1) +" " + container(number-1) + " of beer on the wall.\n";
   }
 
-  public String container()
-  {
-    return "bottles";
-  }
-
   public String container(int number)
   {
     return "bottles";
