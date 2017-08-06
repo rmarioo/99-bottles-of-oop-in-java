@@ -8,7 +8,7 @@ public class Bottles
   public String song()
   {
     return reverseIntRange(0,99).mapToObj(this::verse)
-                                 .collect(Collectors.joining(""));
+                                .collect(Collectors.joining(""));
   }
 
   public String verse(int number)
