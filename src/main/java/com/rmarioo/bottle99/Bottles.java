@@ -20,7 +20,10 @@ public class Bottles
 
   private int next(int number)
   {
-    return 99;
+    if (number == 0)
+      return 99;
+    else
+      return number -1;
   }
 
   private String action(int number)
