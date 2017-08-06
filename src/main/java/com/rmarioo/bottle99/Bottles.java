@@ -18,13 +18,6 @@ public class Bottles
         "Take it down and pass it around, " +
         "no more bottles of beer on the wall.\n";
     else
-    if (number == 2)
-      return
-        number +" bottles of beer on the wall, " +
-        number +" bottles of beer.\n" +
-        "Take one down and pass it around, " +
-        (number-1) +" " + container(number-1) + " of beer on the wall.\n";
-    else
     return
         number +" bottles of beer on the wall, " +
         number +" bottles of beer.\n" +
