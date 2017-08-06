@@ -2,6 +2,13 @@ package com.rmarioo.bottle99;
 
 public class BottleNumber
 {
+  private final int number;
+
+  public BottleNumber(int number)
+  {
+    this.number = number;
+  }
+
   public int  next(int number)
   {
     if (number == 0)

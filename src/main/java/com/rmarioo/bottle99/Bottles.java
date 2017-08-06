@@ -22,22 +22,22 @@ public class Bottles
 
   private int next(int number)
   {
-    return new BottleNumber().next(number);
+    return new BottleNumber(number).next(number);
   }
 
   private String action(int number)
   {
-    return new BottleNumber().action(number);
+    return new BottleNumber(number).action(number);
   }
 
   private String quantity(int number)
   {
-    return new BottleNumber().quantity(number);
+    return new BottleNumber(number).quantity(number);
   }
 
   public String container(int number)
   {
-    return new BottleNumber().container(number);
+    return new BottleNumber(number).container(number);
   }
 
   private String capitalize(String quantity)
