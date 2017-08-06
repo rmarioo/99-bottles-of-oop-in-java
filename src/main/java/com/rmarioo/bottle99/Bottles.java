@@ -34,6 +34,6 @@ public class Bottles
 
   public String container()
   {
-    return "";
+    return "bottles";
   }
 }
