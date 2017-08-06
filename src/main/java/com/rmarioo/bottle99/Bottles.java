@@ -22,7 +22,7 @@ public class Bottles
         quantity(number) +" bottles of beer on the wall, " +
         quantity(number) +" bottles of beer.\n" +
         "Take "+ pronoun(number)+" down and pass it around, " +
-        (number-1) +" " + container(number-1) + " of beer on the wall.\n";
+        quantity(number-1) +" " + container(number-1) + " of beer on the wall.\n";
   }
 
   private String quantity(int number)
