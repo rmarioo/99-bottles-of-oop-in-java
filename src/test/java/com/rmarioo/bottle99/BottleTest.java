@@ -43,5 +43,17 @@ public class BottleTest
         "1 bottle of beer on the wall.\n"));
   }
 
+  @Test
+  public void verse1()
+  {
+    String result = bottles.verse(1);
+    assertThat(result,is(
+        "1 bottle of beer on the wall, " +
+        "1 bottle of beer.\n" +
+        "Take it down and pass it around, " +
+        "no more bottles of beer on the wall.\n"));
+  }
+
+
 
 }
