@@ -7,7 +7,7 @@ public class Bottles
     if (number == 0)
       return
        "No more bottles of beer on the wall, " +
-       "no more bottles of beer.\n" +
+       quantity(number) +" " + container(number) +" of beer.\n" +
        "Go to the store and buy some more, " +
        "99 bottles of beer on the wall.\n";
     else
