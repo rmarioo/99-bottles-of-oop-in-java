@@ -14,23 +14,19 @@ public class Bottles
   public String verse(int number)
   {
     BottleNumber bottleNumber = new BottleNumber(number);
+    BottleNumber nextBottleNumber = bottleNumber.next();
+
     return
        capitalize(bottleNumber.quantity()) +" " + bottleNumber.container() +" of beer on the wall, " +
        bottleNumber.quantity() +" " + bottleNumber.container() +" of beer.\n" +
        bottleNumber.action() + ", " +
-       new BottleNumber(next(number)).quantity() +" " + new BottleNumber(next(number)).container() + " of beer on the wall.\n";
-  }
-
-  private int next(int number)
-  {
-    return new BottleNumber(number).next(number);
+       nextBottleNumber.quantity() +" " + nextBottleNumber.container() + " of beer on the wall.\n";
   }
 
   private String capitalize(String quantity)
   {
     return Character.toUpperCase(quantity.charAt(0))+ quantity.substring(1);
   }
-
 
   private IntStream reverseIntRange(int from, int to)
   {
