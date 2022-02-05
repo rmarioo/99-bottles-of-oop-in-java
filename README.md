@@ -5,7 +5,7 @@ following the book 99 bottle of oop of Sandi Metz
 Branches with refactoring steps versions:
   - [1_shameless_green]  "Shameless green" solution good enough if no no new requirements comes
   - [2_refactor_to_add_sixpacks]   Refactoring to "open" the code to the new feature "sixpack"    
-  - [3_separating_resposibilities] Refactoring to separate responsabilities and create new classes ( TBC)
+  - [3_separating_responsibilities] Refactoring to separate responsibilities and create new classes ( TBC)
 
 [1_shameless_green]: <https://github.com/rmarioo/99-bottles-of-oop-in-java/tree/1_shameless_green>
 [2_refactor_to_add_sixpacks]: <https://github.com/rmarioo/99-bottles-of-oop-in-java/tree/2_refactor_to_add_sixpacks>
